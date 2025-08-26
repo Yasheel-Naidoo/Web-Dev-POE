@@ -17,7 +17,8 @@ Part 1 - Completion
 # Timeline 
 Every 2nd Friday will have an update
 
-Part Details - Basic HTML website for AXEL 
+# Details
+Part 1 Details - Basic HTML website for AXEL 
 Includes a Main, Orders, Services, Contact and About Web Pages
 Main page has basic info about Axel 
 Orders Page allows the user to add and remove items that are listed in the services page
