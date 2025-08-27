@@ -37,6 +37,9 @@ About Page lists the relevant info showing the company background as well as goa
 Changed AXELs layout by removing the login and registration web pages which will be added at a later date - 10 August 2025
 Changed AXELs theme colours by removing green and yellow replacing it with blue and gold - 12 August 2025
 Added Orders Web Page - 25 August 2025
+Added more an incremetation feature to the orders page -27 August 2025
+Added more contact details to the contact page - 27 August 2025
+Added New Services in the services page - 27 August 2025
 
 # References
 Elantis Solutions Inc. (2025) Top Tech Trends Shaping 2025: AI, Automation, Cloud, and Security. Available at: https://www.elantis.com/top-tech-trends-shaping-2025-ai-automation-cloud-and-security/ (Accessed: 27 August 2025).
