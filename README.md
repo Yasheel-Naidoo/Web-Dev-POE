@@ -42,6 +42,7 @@ Added more contact details to the contact page - 27 August 2025
 Added New Services in the services page - 27 August 2025
 
 # References
+# For Research 
 Elantis Solutions Inc. (2025) Top Tech Trends Shaping 2025: AI, Automation, Cloud, and Security. Available at: https://www.elantis.com/top-tech-trends-shaping-2025-ai-automation-cloud-and-security/ (Accessed: 27 August 2025).
 Harvard Business Review (2025) Harvard Business Review: 69% of Early AI Adopters Already See Tangible Business Value. Available at: https://www.scmp.com/presented/tech/topics/generative-ai-and-cloud-services/article/3322635/harvard-business-review-69-early-ai-adopters-already-see-tangible-business-value (Accessed: 27 August 2025).
 Huang, B. (2025) AI and the Future of Cybersecurity: CISO Harvard Roundtable. Available at: https://m.youtube.com/watch?v=HseJaPP7Djo&pp=0gcJCccJAYcqIYzv (Accessed: 27 August 2025).
@@ -52,6 +53,12 @@ Singh, A. (2025) XDR vs EDR: Strengthening Cybersecurity for Robotic Systems. AZ
 Srinivasan, S. (2019) Cybersecurity: Why All Business Disciplines Need to Teach It—and How. Harvard Business School. Available at: https://hbsp.harvard.edu/inspiring-minds/cybersecurity-why-all-business-disciplines-need-to-teach-it-and-how (Accessed: 27 August 2025).
 Terralogic (2025) How AI is Revolutionizing Cybersecurity in 2025. Available at: https://terralogic.com/ai-in-cybersecurity-threat-detection-defense-automation/ (Accessed: 27 August 2025).
 The Daily Security Review (2025) Cybersecurity Trends 2025: AI, Digital Identity, and the Shift to Intelligent SecOps. Available at: https://dailysecurityreview.com/cyber-security/cybersecurity-trends-2025-ai-digital-identity-and-the-shift-to-intelligent-secops/ (Accessed: 27 August 2025).
+
+# For Pictures
+https://www.pexels.com (Accessed: 12 August 2025).
+
+# For HTML
+https://www.web3schools.com (Accessed 10 August 2025).
 
 
 
