@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official AXEL Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Changed to a more modern font */
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        header {
+            display: flex; /* Use flexbox for layout */
+            align-items: center;
+            background: linear-gradient(135deg, #0d3d7f, #000, #ffd700);
+            color: white;
+            padding: 20px;
+        }
+        .logo {
+            width: 150px; /* Set width for circular logo */
+            height: 150px; /* Set height for circular logo */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image covers the entire circle */
+            margin-right: 20px; /* Space between logo and title */
+        }
+        nav {
+            flex-grow: 1; /* Allow nav to take up remaining space */
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        h2 {
+            color: #0d3d7f;
+        }
+        .square-image {
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Space between images */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Images/Logo.jpg" alt="AXEL Logo" class="logo"> <!-- Add your logo here -->
+    <h1>Welcome to The Official AXEL Website</h1>
+    <nav>
+        <a href="About.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="Orders.html">Orders</a> <!-- Added Orders page link -->
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Home</h2>
+        <p>AXEL is a leading cybersecurity and AI automation company dedicated to providing robust security solutions and innovative automation technologies. Our team works tirelessly to ensure excellence in every aspect, helping businesses safeguard their digital assets while optimizing operations.</p>
+        <button onclick="location.href='About.html'" style="background: #0d3d7f; color: white; border: none; padding: 10px 20px; cursor: pointer;">Learn More</button>
+    </section>
+
+    <section>
+        <h2>Our Images</h2>
+        <img src="Images/MainImage1.jpg" alt="Main Image 1" class="square-image"> <!-- First square image -->
+        <img src="Images/MainImage2.jpg" alt="Main Image 2" class="square-image"> <!-- Second square image -->
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Official AXEL Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

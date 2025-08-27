@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AXEL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0d3d7f, #000, #ffd700);
+            color: white;
+            padding: 20px;
+        }
+        .logo {
+            width: 150px; /* Set width for circular logo */
+            height: 150px; /* Set height for circular logo */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image covers the entire circle */
+            margin-right: 20px; /* Space between logo and title */
+        }
+        nav {
+            margin: 15px 0;
+            flex-grow: 1; /* Allow nav to take up remaining space */
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+        .contact-info {
+            margin-top: 20px; /* Space above contact information */
+        }
+        .social-links a {
+            margin: 0 10px; /* Space between social media links */
+            color: #0d3d7f; /* Link color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Images/Logo.jpg" alt="AXEL Logo" class="logo"> 
+    <h1>Contact Us</h1>
+    <nav>
+        <a href="Main.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Services.html">Services</a>
+    </nav>
+</header>
+
+<div class="container">
+    <p>If you have any questions, feel free to reach out!</p>
+    
+    <!-- Email button to open the default mail client -->
+    <button onclick="location.href='mailto:info@example.com'" style="background: #0d3d7f; color: white; border: none; padding: 10px 20px; cursor: pointer;">Email Us</button>
+    
+    <!-- Contact information section -->
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Phone: <a href="tel:+1234567890">+27 69 545 6060</a></p> <!-- Phone number -->
+        <p>Email: <a href="mailto:info@example.com">naidooyasheel10@gmail.com</a></p> <!-- Email -->
+    </div>
+
+    <!-- Social media links -->
+    <div class="social-links">
+        <h2>Follow Us</h2>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Official AXEL Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

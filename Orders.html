@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - AXEL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0d3d7f, #000, #ffd700);
+            color: white;
+            padding: 20px;
+        }
+        .logo {
+            width: 150px; /* Set width for circular logo */
+            height: 150px; /* Set height for circular logo */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image covers the entire circle */
+            margin-right: 20px; /* Space between logo and title */
+        }
+        nav {
+            margin: 15px 0;
+            flex-grow: 1; /* Allow nav to take up remaining space */
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .service {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .service h3 {
+            margin: 0;
+        }
+        .button {
+            background: #0d3d7f;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .quantity {
+            width: 50px;
+            margin: 0 10px;
+        }
+        .total {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Images/Logo.jpg" alt="AXEL Logo" class="logo"> <!-- Add your logo here -->
+    <h1>Orders</h1>
+    <nav>
+        <a href="About.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Available Services</h2>
+    
+    <div id="services-list">
+        <!-- Each service includes a quantity input and an "Add" button -->
+        <div class="service">
+            <div>
+                <h3>Security Assessment</h3>
+                <p>Price: $500</p>
+                <input type="number" value="1" min="1" class="quantity" id="qty-security-assessment">
+            </div>
+            <button class="button" onclick="addToOrder('Security Assessment', 500, 'qty-security-assessment')">Add</button>
+        </div>
+        <div class="service">
+            <div>
+                <h3>Penetration Testing</h3>
+                <p>Price: $1000</p>
+                <input type="number" value="1" min="1" class="quantity" id="qty-penetration-testing">
+            </div>
+            <button class="button" onclick="addToOrder('Penetration Testing', 1000, 'qty-penetration-testing')">Add</button>
+        </div>
+        <div class="service">
+            <div>
+                <h3>Incident Response</h3>
+                <p>Price: $1500</p>
+                <input type="number" value="1" min="1" class="quantity" id="qty-incident-response">
+            </div>
+            <button class="button" onclick="addToOrder('Incident Response', 1500, 'qty-incident-response')">Add</button>
+        </div>
+        <div class="service">
+            <div>
+                <h3>Security Awareness Training</h3>
+                <p>Price: $200</p>
+                <input type="number" value="1" min="1" class="quantity" id="qty-security-awareness-training">
+            </div>
+            <button class="button" onclick="addToOrder('Security Awareness Training', 200, 'qty-security-awareness-training')">Add</button>
+        </div>
+        <div class="service">
+            <div>
+                <h3>Managed Security Services</h3>
+                <p>Price: $2000</p>
+                <input type="number" value="1" min="1" class="quantity" id="qty-managed-security-services">
+            </div>
+            <button class="button" onclick="addToOrder('Managed Security Services', 2000, 'qty-managed-security-services')">Add</button>
+        </div>
+        <div class="service">
+            <div>
+                <h3>Vulnerability Assessment</h3>
+                <p>Price: $750</p>
+                <input type="number" value="1" min="1" class="quantity" id="qty-vulnerability-assessment">
+            </div>
+            <button class="button" onclick="addToOrder('Vulnerability Assessment', 750, 'qty-vulnerability-assessment')">Add</button>
+        </div>
+        <div class="service">
+            <div>
+                <h3>Compliance Audit</h3>
+                <p>Price: $1200</p>
+                <input type="number" value="1" min="1" class="quantity" id="qty-compliance-audit">
+            </div>
+            <button class="button" onclick="addToOrder('Compliance Audit', 1200, 'qty-compliance-audit')">Add</button>
+        </div>
+    </div>
+
+    <h2>Your Order</h2>
+    <div id="order-list"></div>
+    <div class="total" id="total-price">Total: $0</div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Official AXEL Website. All rights reserved.</p>
+</footer>
+
+<script>
+    let orderItems = []; // Array to hold order items
+    let total = 0; // Variable to keep track of total price
+
+    // Function to add items to the order
+    function addToOrder(serviceName, price, qtyId) {
+        const quantity = parseInt(document.getElementById(qtyId).value);
+        const totalPrice = price * quantity;
+
+        // Check if the service is already in the order
+        const existingItem = orderItems.find(item => item.name === serviceName);
+        if (existingItem) {
+            existingItem.quantity += quantity; // Increase quantity
+            existingItem.price += totalPrice; // Update total price for the service
+        } else {
+            orderItems.push({ name: serviceName, price: totalPrice, quantity: quantity });
+        }
+
+        total += totalPrice; // Update total
+        updateOrderList(); // Refresh the order list
+    }
+
+    // Function to remove items from the order
+    function removeFromOrder(serviceName) {
+        const index = orderItems.findIndex(item => item.name === serviceName);
+        if (index !== -1) {
+            total -= orderItems[index].price; // Deduct total price
+            orderItems.splice(index, 1); // Remove item from order
+            updateOrderList(); // Refresh the order list
+        }
+    }
+
+    // Function to update the display of the order list
+    function updateOrderList() {
+        const orderList = document.getElementById('order-list');
+        orderList.innerHTML = ''; // Clear current list
+
+        // Populate the order list with items
+        orderItems.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'service';
+            div.innerHTML = `
+                <div>
+                    <h3>${item.name} (x${item.quantity})</h3>
+                    <p>Price: $${item.price}</p>
+                </div>
+                <button class="button" onclick="removeFromOrder('${item.name}')">Remove</button>
+            `;
+            orderList.appendChild(div);
+        });
+
+        document.getElementById('total-price').innerText = `Total: $${total}`; // Update total price display
+    }
+</script>
+
+</body>
+</html>
