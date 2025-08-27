@@ -28,6 +28,10 @@ About Page lists the relevant info showing the company background as well as goa
 
 # Sitemap
  Main Page
+ About Page
+ Services Page
+ Contact Page
+ Orders Page
 
 # Changelog
 Changed AXELs layout by removing the login and registration web pages which will be added at a later date - 10 August 2025
