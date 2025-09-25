@@ -69,6 +69,9 @@ Singh, A. (2025) XDR vs EDR: Strengthening Cybersecurity for Robotic Systems. AZ
 Srinivasan, S. (2019) Cybersecurity: Why All Business Disciplines Need to Teach It—and How. Harvard Business School. Available at: https://hbsp.harvard.edu/inspiring-minds/cybersecurity-why-all-business-disciplines-need-to-teach-it-and-how (Accessed: 27 August 2025).
 Terralogic (2025) How AI is Revolutionizing Cybersecurity in 2025. Available at: https://terralogic.com/ai-in-cybersecurity-threat-detection-defense-automation/ (Accessed: 27 August 2025).
 The Daily Security Review (2025) Cybersecurity Trends 2025: AI, Digital Identity, and the Shift to Intelligent SecOps. Available at: https://dailysecurityreview.com/cyber-security/cybersecurity-trends-2025-ai-digital-identity-and-the-shift-to-intelligent-secops/ (Accessed: 27 August 2025).
+Meyer, E. A. (2011). CSS: The Definitive Guide. 3rd ed. Sebastopol, CA: O'Reilly Media.
+Mozilla Developer Network. (2023). CSS property: color. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 2025, September 25).
+
 
 # For Pictures
 https://www.pexels.com (Accessed: 12 August 2025).
