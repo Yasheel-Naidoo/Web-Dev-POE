@@ -4,58 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - AXEL</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: white;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, #0d3d7f, #000, #ffd700);
-            color: white;
-            padding: 20px;
-        }
-        .logo {
-            width: 150px; /* Set width for circular logo */
-            height: 150px; /* Set height for circular logo */
-            border-radius: 50%; /* Makes the image circular */
-            object-fit: cover; /* Ensures the image covers the entire circle */
-            margin-right: 20px; /* Space between logo and title */
-        }
-        nav {
-            margin: 15px 0;
-            flex-grow: 1; /* Allow nav to take up remaining space */
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #ffd700; /* Gold color for navigation links */
-            text-decoration: none;
-        }
-        .container {
-            max-width: 800px; /* Maximum width for the container */
-            margin: auto; /* Center the container */
-            padding: 20px; /* Padding around the container */
-        }
-        footer {
-            text-align: center; /* Center the footer text */
-            padding: 10px; /* Padding for the footer */
-            background: #f1f1f1; /* Light gray background for the footer */
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Link to external stylesheet -->
 </head>
 <body>
 
 <header>
     <img src="Images/Logo.jpg" alt="AXEL Logo" class="logo"> <!-- Add your logo here -->
-    <h1>Our Services</h1>
-    <nav>
-        <a href="Main.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Contact.html">Contact</a>
+   <h1 style="flex-grow: 1; text-align: center;">Services Offered</h1>
+   <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="Main.html"><i class="fa-solid fa-home"></i></a></li>
+            <li><a href="About.html"><i class="fa-solid fa-info"></i></a></li>
+            <li><a href="Contact.html"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
     </nav>
 </header>
 
@@ -117,6 +78,6 @@
 <footer>
     <p>&copy; 2025 Official AXEL Website. All rights reserved.</p>
 </footer>
-
+ <script src="https://kit.fontawesome.com/26db568121.js" crossorigin="anonymous"></script>
 </body>
 </html>

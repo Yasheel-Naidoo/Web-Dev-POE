@@ -3,87 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Official AXEL Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif; /* Changed to a more modern font */
-            margin: 0;
-            padding: 0;
-            background: white;
-        }
-        header {
-            display: flex; /* Use flexbox for layout */
-            align-items: center;
-            background: linear-gradient(135deg, #0d3d7f, #000, #ffd700);
-            color: white;
-            padding: 20px;
-        }
-        .logo {
-            width: 150px; /* Set width for circular logo */
-            height: 150px; /* Set height for circular logo */
-            border-radius: 50%; /* Makes the image circular */
-            object-fit: cover; /* Ensures the image covers the entire circle */
-            margin-right: 20px; /* Space between logo and title */
-        }
-        nav {
-            flex-grow: 1; /* Allow nav to take up remaining space */
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #ffd700;
-            text-decoration: none;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #f1f1f1;
-        }
-        h2 {
-            color: #0d3d7f;
-        }
-        .square-image {
-            width: 100%; /* Full width */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 20px; /* Space between images */
-        }
-    </style>
+    <title>Main - AXEL</title>
+
+    <!-- Font Awesome (CDN first) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/Z8e1rwAO3Rp+4l6jIqZ9zzTtmI3UksdQRVvoxMfooAo0P+FcF65V+6Y4Zd9f+Z6F3g==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+
+    <!-- Fallback: Load Font Awesome via JS Kit if CDN fails -->
+    <script>
+        window.addEventListener("error", function (e) {
+            if (e.target.tagName === "LINK" && e.target.href.includes("font-awesome")) {
+                let kit = document.createElement("script");
+                kit.src = "https://kit.fontawesome.com/a076d05399.js"; // Free FA Kit
+                kit.crossOrigin = "anonymous";
+                document.head.appendChild(kit);
+            }
+        }, true);
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
 <header>
-    <img src="Images/Logo.jpg" alt="AXEL Logo" class="logo"> <!-- Add your logo here -->
-    <h1>Welcome to The Official AXEL Website</h1>
-    <nav>
-        <a href="About.html">About</a>
-        <a href="Services.html">Services</a>
-        <a href="Orders.html">Orders</a> <!-- Added Orders page link -->
-        <a href="Contact.html">Contact</a>
-    </nav>
+    <img src="Images/Logo.jpg" alt="AXEL Logo" class="logo">
+    <h1 class="header-title">Welcome to AXEL</h1>
+
+    <!-- Navbar -->
+<nav class="navbar">
+    <ul class="nav-links" id="nav-links">
+        <li>
+            <a href="About.html" title="About"><i class="fa-solid fa-circle-info"></i></a>
+        </li>
+        <li>
+            <a href="Services.html" title="Services"><i class="fa-solid fa-gears"></i></a>
+        </li>
+        <li>
+            <a href="Contact.html" title="Contact"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" title="User"><i class="fa-solid fa-user"></i></a>
+            <ul class="dropdown">
+                <li>
+                    <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                </li>
+                <li>
+                    <a href="register.html"><i class="fa-solid fa-user-plus"></i></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
 </header>
 
-<div class="container">
-    <section>
-        <h2>Home</h2>
-        <p>AXEL is a leading cybersecurity and AI automation company dedicated to providing robust security solutions and innovative automation technologies. Our team works tirelessly to ensure excellence in every aspect, helping businesses safeguard their digital assets while optimizing operations.</p>
-        <button onclick="location.href='About.html'" style="background: #0d3d7f; color: white; border: none; padding: 10px 20px; cursor: pointer;">Learn More</button>
-    </section>
+<section class="hero">
+  <video autoplay muted loop id="bg-video">
+    <source src="Videos/cybersecurity.mp4" type="video/mp4">
+  </video>
+  <div class="hero-text"></div>
+</section>
 
-    <section>
-        <h2>Our Images</h2>
-        <img src="Images/MainImage1.jpg" alt="Main Image 1" class="square-image"> <!-- First square image -->
-        <img src="Images/MainImage2.jpg" alt="Main Image 2" class="square-image"> <!-- Second square image -->
-    </section>
-</div>
+<main class="container">
+    <h2>Home</h2>
+    <p>AXEL is a leading cybersecurity and AI automation company...</p>
+</main>
 
 <footer>
-    <p>&copy; 2025 Official AXEL Website. All rights reserved.</p>
+    <div class="footer-nav"></div>
+    <div class="footer-info">&copy; 2025 Official AXEL Website. All rights reserved.</div>
 </footer>
+
+<!-- JS Script -->
+<script src="JS/script.js"></script>
+ <script src="https://kit.fontawesome.com/26db568121.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

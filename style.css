@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #0d3d7f, #000, #ffd700);
+  color: white;
+}
+
+/* Title Styles */
+.header-title {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+/* Logo Styles */
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+
+
+/* Navbar */
+.navbar {
+  margin-left: auto;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #00bcd4;
+  color: #fff;
+}
+
+/* Dropdown */
+.dropdown {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #333;
+  min-width: 80px;
+  border-radius: 5px;
+  z-index: 1;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links li:hover .dropdown {
+  max-height: 160px;
+  opacity: 1;
+}
+
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown a {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown a:hover {
+  background-color: #575757;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+h2 {
+  color: #0d3d7f;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.footer-nav a:hover {
+  color: #00bcd4;
+}
+.footer-info {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+/* Video Size */
+.hero { 
+    position: relative; /* Position relative for absolute positioning of text */
+    max-width: 1900px; /* Set a maximum width for the hero section */
+    margin: 0 auto; /* Center the hero section */
+    overflow: hidden; /* Hide overflow */
+}
+
+#bg-video {
+    width: 100%; /* Make the video responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 450px; /* Set a maximum height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+.hero-text {
+    position: absolute; /* Position the text over the video */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    z-index: 1; /* Ensure text is above the video */
+}
+
+/* Social Media Links */
+.social-links {
+    margin: 2rem 0;
+    text-align: left; /* or center if you want them centered */
+}
+
+.social-links a {
+    display: block; /* forces each link onto a new line */
+    margin: 8px 0;
+    color: #0d3d7f; /* your theme color */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a i {
+    margin-right: 10px; /* spacing between icon and text */
+}
+
+.social-links a:hover {
+    color: #00bcd4; /* hover effect */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #0d3d7f;
+    padding: 1rem;
+    border-radius: 8px 0 0 8px;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+    animation: slideIn 0.3s ease forwards;
+  }
+
+  .nav-links a {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
