@@ -10,6 +10,7 @@ ST10477117
 
 # Project Overview
 Part 1 - Completion
+Part 2 - Completion
 
 
 # Website Goals and Objectives
@@ -26,6 +27,17 @@ Services Page lists services offered by AXEL for users
 Contact Page displays relevant contact info incase customers have a problem with the services they bough
 About Page lists the relevant info showing the company background as well as goals , vision and mission statements
 
+Part 2 Details - Css features for AXEL
+Includes a style.css file 
+Added a video to the Main page 
+Changed the nav bar to have icons 
+Added a 404 error message for login web page and registration web page
+Added Web page responsiveness , After 175% zoom , icons wont show
+Used a kit from font awesome for the icons
+Will add login , registration , orders and the dashboard back in part 3
+Added icons for the social media links
+
+
 # Sitemap
  Main Page
  About Page
@@ -40,6 +52,10 @@ Added Orders Web Page - 25 August 2025
 Added more an incremetation feature to the orders page -27 August 2025
 Added more contact details to the contact page - 27 August 2025
 Added New Services in the services page - 27 August 2025
+Added Css File (style.css) - 30 August 2025
+Added Video to Main Page - 1 September 2025
+Used font awesome kit - 20 September 2025
+
 
 # References
 # For Research 
@@ -56,9 +72,12 @@ The Daily Security Review (2025) Cybersecurity Trends 2025: AI, Digital Identity
 
 # For Pictures
 https://www.pexels.com (Accessed: 12 August 2025).
-
+# For Videos
+https://www.pexels.com (Accessed: 1 September 2025).
 # For HTML
 https://www.web3schools.com (Accessed 10 August 2025).
+# For Icons
+https://fontawesome.com/kits/new (Accessed 20 September 2025)
 
 
 
